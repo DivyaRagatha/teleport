@@ -31,10 +31,6 @@ spec:
         {{- if .Values.insecureSkipProxyTLSVerify }}
         - "--insecure"
         {{- end }}
-          {{- if .Values.env }}
-        env:
-{{ toYaml .Values.env | indent 12 }}
-            {{- end }}
         securityContext:
           allowPrivilegeEscalation: false
           capabilities:
