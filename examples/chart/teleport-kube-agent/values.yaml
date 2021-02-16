@@ -74,6 +74,6 @@ serviceAccountName: teleport-kube-agent
 secretName: teleport-kube-agent-join-token
 
 # Pass environment variables to the Deployment
-env:
-  - name: http_proxy
-    value: http://proxy.exmaple.com:3128
+# env:
+#   - name: http_proxy
+#     value: http://proxy.exmaple.com:3128
