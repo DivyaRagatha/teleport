@@ -72,3 +72,8 @@ clusterRoleBindingName: teleport-kube-agent
 serviceAccountName: teleport-kube-agent
 # Name of the Secret to store the teleport join token.
 secretName: teleport-kube-agent-join-token
+
+# Pass environment variables to the Deployment
+env:
+  - name: http_proxy
+    value: http://proxy.exmaple.com:3128
